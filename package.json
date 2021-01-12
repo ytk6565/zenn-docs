@@ -1,0 +1,14 @@
+{
+  "name": "zenn-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com.private:ytk6565/zenn-docs.git",
+  "author": "ytk6565 <ytk6565@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "zenn-cli": "^0.1.69"
+  }
+}
