@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "zenn-cli": "^0.1.69"
+  },
+  "devDependencies": {
+    "node-fetch": ">=2.6.1"
   }
 }
