@@ -77,7 +77,7 @@ Slack にメッセージが届けば、 `$ sls deploy` でデプロイを実行�
 メッセージをカスタマイズする場合は、 [AWS Cost Explorer のドキュメント](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/CostExplorer.html) を参照してください。
 
 最後までお読みいただきありがとうございます。
-情報の誤り、誤字脱字などございましたら https://github.com/ytk6565/zenn-docs に Issue を建てていただけますと幸いです。
+記事に対するリアクションや情報の誤り、誤字脱字などございましたらコメントや[記事を管理しているリポジトリ](https://github.com/ytk6565/zenn-docs)までお願いいたします。
 
 # 参考にさせていただいたページ
 
