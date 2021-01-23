@@ -33,12 +33,13 @@ published: true
 下記 GIF ファイルが挙動のデモです。
 左側がデフォルトで右側が `fadeEffect: { crossFade: true }` を設定した状態です。
 
-![デモ](https://ytk6565.s3-ap-northeast-1.amazonaws.com/zenn.dev/swiper-effect-fade/demo.gif)
+![オプションによる挙動の違いのデモ](https://ytk6565.s3-ap-northeast-1.amazonaws.com/zenn.dev/swiper-effect-fade/demo.gif)
 
 # おわりに
 
 デフォルトの挙動よりも汎用的と感じたため Stack Overflow に投稿してみました。
 
+最後までお読みいただきありがとうございます。
 情報の誤り、誤字脱字などございましたら https://github.com/ytk6565/zenn-docs に Issue を建てていただけますと幸いです。
 
 # 参考にさせていただいたページ
