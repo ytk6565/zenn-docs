@@ -214,8 +214,8 @@ $ git config --global init.defaultBranch # output: main
 
 複数の GitHub アカウントの利用が安全に行えるようになりました。
 [必須コミット署名を有効にする](https://docs.github.com/ja/free-pro-team@latest/github/administering-a-repository/enabling-required-commit-signing) などを行い特定のブランチの保護も対応するとなお良いかと思います。
-最後までお読みいただきありがとうございます。
 
+最後までお読みいただきありがとうございます。
 情報の誤り、誤字脱字などございましたら https://github.com/ytk6565/zenn-docs に Issue を建てていただけますと幸いです。
 
 # 参考にさせていただいたページ
