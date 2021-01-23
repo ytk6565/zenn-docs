@@ -4,7 +4,7 @@ emoji: "🧾"
 type: "tech"
 topics:
   ["aws", "lambda", "serverless", "slack"]
-published: false
+published: true
 ---
 
 # はじめに
