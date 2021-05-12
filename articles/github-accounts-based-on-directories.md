@@ -110,6 +110,15 @@ GPG キーの生成時に設定したパスフレーズをコミットの度に�
 $ brew install pinentry-mac
 ```
 
+`~/.gnupg/gpg-agent.conf` に以下を追記する。
+
+```conf
+# Intel
+pinentry-program /usr/local/bin/pinentry-mac
+# Apple Silicon
+pinentry-program /opt/homebrew/bin/pinentry-mac
+```
+
 # ディレクトリによってアカウントを切り替える
 
 ## アカウントごとに設定ファイルを作成する
