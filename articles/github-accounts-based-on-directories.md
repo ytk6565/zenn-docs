@@ -161,8 +161,8 @@ $ touch .gitconfig.personal
 [Includes](https://git-scm.com/docs/git-config#_includes) の `includeIf` を利用し、指定したディレクトリ配下で利用する設定ファイルを切り替える。
 
 ```sh
-$ git config --global includeIf."gitdif:~/git/business/".path ".gitconfig.business"
-$ git config --global includeIf."gitdif:~/git/personal/".path ".gitconfig.personal"
+$ git config --global includeIf."gitdir:~/git/business/".path ".gitconfig.business"
+$ git config --global includeIf."gitdir:~/git/personal/".path ".gitconfig.personal"
 ```
 
 ### アカウントの切り替えを確認する
