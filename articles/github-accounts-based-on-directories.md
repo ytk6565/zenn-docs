@@ -35,8 +35,8 @@ published: true
 
 ```sh
 $ cd ~/.ssh
-$ ssh-keygen -t ed25519 -C "business@example.com" -f id_rsa_github_business
-$ ssh-keygen -t ed25519 -C "personal@example.com" -f id_rsa_github_personal
+$ ssh-keygen -t ed25519 -C "business@example.com" -f id_ed25519_github_business
+$ ssh-keygen -t ed25519 -C "personal@example.com" -f id_ed25519_github_personal
 ```
 
 ## GitHub アカウントに SSH キーを追加する
@@ -45,9 +45,9 @@ $ ssh-keygen -t ed25519 -C "personal@example.com" -f id_rsa_github_personal
 
 ```sh
 # copy business public key
-$ pbcopy < ~/.ssh/id_rsa_github_business.pub
+$ pbcopy < ~/.ssh/id_ed25519_github_business.pub
 # copy personal public key
-$ pbcopy < ~/.ssh/id_rsa_github_personal.pub
+$ pbcopy < ~/.ssh/id_ed25519_github_personal.pub
 ```
 
 # GPG
@@ -141,7 +141,7 @@ $ touch .gitconfig.personal
 
 ```properties:.gitconfig.business
 [core]
-  sshCommand = "ssh -i ~/.ssh/id_rsa_github_business -F /dev/null"
+  sshCommand = "ssh -i ~/.ssh/id_ed25519_github_business -F /dev/null"
 [user]
   name = user_business
   email = business@example.com
@@ -154,7 +154,7 @@ $ touch .gitconfig.personal
 
 ```properties:.gitconfig.personal
 [core]
-  sshCommand = "ssh -i ~/.ssh/id_rsa_github_personal -F /dev/null"
+  sshCommand = "ssh -i ~/.ssh/id_ed25519_github_personal -F /dev/null"
 [user]
   name = user_personal
   email = personal@example.com
@@ -187,7 +187,7 @@ Cloning into 'business-repository'...
 Resolving deltas: 100% (999/999), done # or "warning: You appear to have cloned an empty repository."
 
 $ cd ./business-repository
-$ git config core.sshCommand # output: ssh -i ~/.ssh/id_rsa_github_business -F /dev/null
+$ git config core.sshCommand # output: ssh -i ~/.ssh/id_ed25519_github_business -F /dev/null
 $ git config user.name # output: user_business
 $ git config user.email # output: business@example.com
 $ git config user.signingKey # output: BUSINESS_1234567
@@ -203,7 +203,7 @@ Cloning into 'personal-repository'...
 Resolving deltas: 100% (999/999), done # or "warning: You appear to have cloned an empty repository."
 
 $ cd ./personal-repository
-$ git config core.sshCommand # output: ssh -i ~/.ssh/id_rsa_github_personal -F /dev/null
+$ git config core.sshCommand # output: ssh -i ~/.ssh/id_ed25519_github_personal -F /dev/null
 $ git config user.name # output: user_personal
 $ git config user.email # output: personal@example.com
 $ git config user.signingKey # output: PERSONAL_1234567
