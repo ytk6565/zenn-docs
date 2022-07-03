@@ -1,7 +1,7 @@
 ---
 title: "Swiper の effect: fade でスライドが重なる"
 emoji: "🌠"
-type: "tech"
+type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["css", "javascript"]
 published: true
 ---

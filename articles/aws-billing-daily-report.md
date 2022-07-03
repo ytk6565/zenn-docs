@@ -1,7 +1,7 @@
 ---
 title: "AWSの請求レポートを毎日Slackに通知"
 emoji: "🧾"
-type: "tech"
+type: "tech" # tech: 技術記事 / idea: アイデア
 topics:
   ["aws", "lambda", "serverless", "slack"]
 published: true

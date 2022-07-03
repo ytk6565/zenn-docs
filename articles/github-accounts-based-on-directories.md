@@ -1,7 +1,7 @@
 ---
 title: "ディレクトリベースで GitHub アカウントを切り替える"
 emoji: "🤹"
-type: "tech"
+type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["github", "git"]
 published: true
 ---
