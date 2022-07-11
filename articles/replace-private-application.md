@@ -2,7 +2,7 @@
 title: "個人開発した Web アプリケーションをリプレイス"
 emoji: "🎃"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["個人開発", "test", "githubactions"]
 published: false
 ---
 
