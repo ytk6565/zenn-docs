@@ -6,7 +6,7 @@ topics: ["github", "git"]
 published: true
 ---
 
-# はじめに
+## はじめに
 
 初めて Zenn に投稿します。宜しくお願いいたします。
 
@@ -18,7 +18,7 @@ published: true
 
 などの問題に直面したため、解決方法をまとめることにしました。
 
-## 前提
+### 前提
 
 - macOS を利用しております。他の OS をご利用の場合は適宜お読み替えください。
 - GitHub を利用している方を想定して書いております。
@@ -29,9 +29,9 @@ published: true
   - `~/git/business/` 以下を会社用アカウントで利用するリポジトリ。
   - `~/git/personal/` 以下を個人用アカウントで利用するリポジトリ。
 
-# SSH
+## SSH
 
-## SSH キーを生成する
+### SSH キーを生成する
 
 ```sh
 $ cd ~/.ssh
@@ -39,7 +39,7 @@ $ ssh-keygen -t ed25519 -C "business@example.com" -f id_ed25519_github_business
 $ ssh-keygen -t ed25519 -C "personal@example.com" -f id_ed25519_github_personal
 ```
 
-## GitHub アカウントに SSH キーを追加する
+### GitHub アカウントに SSH キーを追加する
 
 それぞれの [GitHub アカウントへの新しい SSH キーの追加](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account) を行う。
 
@@ -50,12 +50,12 @@ $ pbcopy < ~/.ssh/id_ed25519_github_business.pub
 $ pbcopy < ~/.ssh/id_ed25519_github_personal.pub
 ```
 
-# GPG
+## GPG
 
 コミットに署名するため GPG の対応を行います。
 [Git コミットで作成者を偽装する方法／署名付きコミットでの対策](https://qiita.com/Siketyan/items/bb869f740a53a3bf169e) という記事が大変参考になりました。
 
-## GPG キーを生成する
+### GPG キーを生成する
 
 [GPG キーの生成](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/generating-a-new-gpg-key#gpg-%E3%82%AD%E3%83%BC%E3%81%AE%E7%94%9F%E6%88%90) を参考に GPG キーを生成する。
 
@@ -74,7 +74,7 @@ $ gpg --full-generate-key
 $ gpg --full-generate-key
 ```
 
-## GPG キーを確認する
+### GPG キーを確認する
 
 ```sh
 $ gpg --list-secret-keys --keyid-format LONG
@@ -91,7 +91,7 @@ uid                 [ultimate] Taro Yamada (Personal Github key) <personal@examp
 ssb   rsa4096/**************** 2021-01-01 [E]
 ```
 
-## GitHub アカウントに GPG キーの追加する
+### GitHub アカウントに GPG キーの追加する
 
 下記コマンドで GPG キーをコピーし [GitHub アカウントへの新しい GPG キーの追加](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/adding-a-new-gpg-key-to-your-github-account) を行う。
 
@@ -102,7 +102,7 @@ $ gpg --armor --export BUSINESS_1234567
 $ gpg --armor --export PERSONAL_1234567
 ```
 
-### pinentry-mac をインストール
+#### pinentry-mac をインストール
 
 GPG キーの生成時に設定したパスフレーズをコミットの度に入力するのは面倒なので `pinentry-mac` をインストールしてパスフレーズをキーチェーンに保存し入力を初回のみで済ませる。
 
