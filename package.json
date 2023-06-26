@@ -5,14 +5,16 @@
   "repository": "git@github.com.private:ytk6565/zenn-docs.git",
   "author": "ytk6565 <ytk6565@gmail.com>",
   "license": "MIT",
-  "engines": {
-    "node": "14.x"
+  "scripts": {
+    "zenn": "zenn",
+    "init": "zenn init",
+    "preview": "zenn preview",
+    "new:article": "zenn new:article",
+    "new:book": "zenn new:book",
+    "list:articles": "zenn list:articles",
+    "list:books": "zenn list:books"
   },
   "dependencies": {
-    "ssri": "9.0.1",
-    "zenn-cli": "0.1.141"
-  },
-  "devDependencies": {
-    "node-fetch": "3.3.1"
+    "zenn-cli": "^0.1.144"
   }
 }
